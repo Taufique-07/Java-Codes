@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Lab01 {
 
+    // method for Check a number is Prime or not
     public static void primeCheck(int p) {
 
         if (p < 2){
@@ -23,6 +24,7 @@ public class Lab01 {
         }
     }
 
+    // method to find large number from given number
     public static int largestNumber() {
         int a = 7, b = 11, c = 2;
         int biggest ;
@@ -38,6 +40,7 @@ public class Lab01 {
         return biggest;
     }
 
+    // Multiplication table for given number
     public static void multiplication() {
         int num = 25;
         for (int i=1; i<=10; i++) {
@@ -45,6 +48,7 @@ public class Lab01 {
         }
     }
 
+    // Calculate Sum of 1 to 100 natural numbers
     public static int naturalSum() {
         int naturalSum = 0;
 
@@ -53,7 +57,8 @@ public class Lab01 {
         }
         return naturalSum;
     }
-
+    
+    // Calculate Sum of odd numbers in a array
     public static void sumAvg(int [] array) {
         int sum = 0;
         double avg ;
@@ -66,6 +71,7 @@ public class Lab01 {
         System.out.println("Avarage of the array : "+avg);
     }
 
+    // Calculate Sum of odd numbers in a array
     public static int oddSum(int [] array) {
         int oddSum = 0;
         for (int j : array) {
@@ -76,6 +82,7 @@ public class Lab01 {
         return oddSum;
     }
 
+    // Calculate Sum of even numbers in a array
     public static int evenSum(int [] array) {
         int evenSum = 0;
         for (int j : array) {
@@ -92,6 +99,7 @@ public class Lab01 {
 
         int [] array = {5,7,8,11,17,40};
 
+        // Calling all methodes 
         int evenSum = evenSum(array);
         int oddSum = oddSum(array);
         sumAvg(array);
